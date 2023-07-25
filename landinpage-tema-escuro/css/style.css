@@ -139,7 +139,7 @@ header{
 
 .conteudo-coment{
     padding-left: 6rem;
-    height: 15rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -334,10 +334,134 @@ nav.links a{
     margin-right: 1.0rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 376px) {
     
-header{
-    
+body{
+    max-width: 375px;
 }
 
+p, a{
+    font-size: 1.4rem;
+}
+    
+header{
+    padding: 2rem;
+    width: 100%;
+}
+
+header img{
+    width: 25%;    
+}
+
+.nav-header{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+}
+
+/* banner */
+
+.banner-capa{
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-position: bottom;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.banner-capa img{
+    width: 60%;
+}
+
+.banner-capa h1{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.banner-capa p{
+    padding: 1rem;
+}
+
+.button-get{
+    margin-top: 1.2rem;
+    padding: 1.5rem 4rem;
+}
+
+/* Area serviços */
+
+.area-servicos{
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.area-servicos h3{
+    font-size: 2rem;
+}
+
+/* Seção Comentarios */
+
+.secao-coment{
+    margin-top: 5rem;
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+}
+
+.capa-secao-coment, .comentarios{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 1rem;
+}
+
+.comentario{
+    width: 90%;
+}
+
+ /* Seção Email */
+
+ .secao-email{
+    width: 90%;
+    padding: 2rem 1rem;
+ }
+
+ .secao-email h3{
+    font-size: 3rem
+ }
+
+ .secao-email p{
+    padding: 0 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem
+ }
+
+ .secao-email input{
+    width: 100%;
+ }
+
+ .secao-email .button-get{
+    width: 100%;
+ }
+
+ footer{
+    padding: 20rem 2.5rem 5rem 2.5rem;
+ }
+
+ .links-footer{
+    flex-direction: column;
+    gap: 3rem;
+ }
+
+ .link-footer{
+    width: 100%;
+ }
+
+ .links-footer .links{
+    grid-template-columns: 1fr;
+ }
+
+ .redes-sociais{
+    text-align: center;
+ }
 }
